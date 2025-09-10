@@ -1,0 +1,110 @@
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
+# Whisker Training Dataset - All subdirectories with train/val splits
+# Documentation: https://docs.ultralytics.com/datasets/segment/
+# Example usage: yolo train data=dataset.yaml
+# Structure:
+# Whisker_Training_Data/
+# ├── 0110_1/
+# │   ├── images/
+# │   │   ├── train/
+# │   │   └── val/
+# │   └── labels/
+# │       ├── train/
+# │       └── val/
+# ├── 0111_1/
+# │   └── ... (same structure)
+# └── ... (more subdirectories)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /home/wanglab/Data/Whisker_Training_Data # dataset root dir
+
+# Train images - all train subdirectories
+train: 
+  - 0110_1/images/train
+  - 0111_1/images/train
+  - 0112_1/images/train
+  - 0112_2/images/train
+  - 0120_1/images/train
+  - 0121_1/images/train
+  - 0124_1_2/images/train
+  - 0215_1/images/train
+  - 0228_1/images/train
+  - 040924_1/images/train
+  - 0424_1/images/train
+  - 0425_1/images/train
+  - 0427_1/images/train
+  - 0428_3/images/train
+  - 0429_1/images/train
+  - 050724_1/images/train
+  - 050924_1/images/train
+  - 050924_1_piezo/images/train
+  - 050924_5/images/train
+  - 0514_3/images/train
+  - 0515_1/images/train
+  - 052725_1/images/train
+  - 080824_1/images/train
+  - 091223_1/images/train
+  - 091322_1/images/train
+  - 092523_2_1/images/train
+  - 092624_1_4/images/train
+  - 092724_1/images/train
+  - 100923_1/images/train
+  - 112223_1/images/train
+  - 112423_1/images/train
+  - 112423_2/images/train
+  - 112823_1/images/train
+  - 4588_053124_1/images/train
+  - 4589_053124_1/images/train
+  - 4589_060324/images/train
+  - 5378_070824/images/train
+  - C1_300_roi1_00002/images/train
+  - wx_0_2499/images/train
+  - wx_1630000_1632499/images/train
+
+# Validation images - all val subdirectories
+val: 
+  - 0110_1/images/val
+  - 0111_1/images/val
+  - 0112_1/images/val
+  - 0112_2/images/val
+  - 0120_1/images/val
+  - 0121_1/images/val
+  - 0124_1_2/images/val
+  - 0215_1/images/val
+  - 0228_1/images/val
+  - 040924_1/images/val
+  - 0424_1/images/val
+  - 0425_1/images/val
+  - 0427_1/images/val
+  - 0428_3/images/val
+  - 0429_1/images/val
+  - 050724_1/images/val
+  - 050924_1/images/val
+  - 050924_1_piezo/images/val
+  - 050924_5/images/val
+  - 0514_3/images/val
+  - 0515_1/images/val
+  - 052725_1/images/val
+  - 080824_1/images/val
+  - 091223_1/images/val
+  - 091322_1/images/val
+  - 092523_2_1/images/val
+  - 092624_1_4/images/val
+  - 092724_1/images/val
+  - 100923_1/images/val
+  - 112223_1/images/val
+  - 112423_1/images/val
+  - 112423_2/images/val
+  - 112823_1/images/val
+  - 4588_053124_1/images/val
+  - 4589_053124_1/images/val
+  - 4589_060324/images/val
+  - 5378_070824/images/val
+  - C1_300_roi1_00002/images/val
+  - wx_0_2499/images/val
+  - wx_1630000_1632499/images/val
+
+# Classes
+names:
+  0: Whisker
